@@ -1,0 +1,14 @@
+{
+  "name": "NFT-website",
+  "description": "It's NFT website. It's just for learning Advanced CSS",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
