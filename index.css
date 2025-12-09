@@ -6,7 +6,7 @@ body {
 
 /* ----- TYPOGRAPHY ----- */
 
-h1,
+h1, 
 h3 {
     margin: 0;
 }
@@ -44,22 +44,21 @@ p {
 
 a {
     color: #ef5839;
-    text-decoration: underline dotted;
+    text-decoration: underline dotted; 
 }
 
-a:hover,
+a:hover, 
 a:active {
     color: #d4b44c;
 }
 
 .btn {
     font-size: 1.125rem;
+    text-align: center;
     font-weight: 500;
     text-decoration: none;
     display: block;
-    text-align: center;
     padding: 0.5em 1em;
-    margin-right: 0.5em;
     margin-bottom: 1em;
     border-radius: 4.6px;
 }
@@ -70,16 +69,16 @@ a:active {
 }
 
 .btn-mid {
-    color: #5f29a3;
-    background: #f0e0ff;
+    color: #5f29a3; 
+    background: #f0e0ff; 
 }
 
 .btn-light {
-    color: #5f29a3;
+    color: #5f29a3; 
     background: whitesmoke;
 }
 
-.btn:hover,
+.btn:hover, 
 .btn:active {
     color: #2b238a;
     background-color: #f3e885;
@@ -87,13 +86,13 @@ a:active {
 
 /* ----- LAYOUT ----- */
 
-header,
-section,
+header, 
+section, 
 footer {
     padding: 1.25em 0;
 }
 
-header,
+header, 
 .section-two {
     background-color: #5f29a3;
 }
@@ -126,6 +125,22 @@ footer {
     color: #5f29a3;
 }
 
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 /* ----- MEDIA QUERIES ----- */
 
 @media (min-width: 480px) {
@@ -133,36 +148,50 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-
+    
     .feature-image {
-        width: 48.8%;
+        width: 48.8%;        
     }
 }
 
-@media (min-width: 768px) {
-
-    header,
-    .section,
-    footer {
-        padding: 2.875em 0;
+@media (max-width: 767px) {
+    header {
+        text-align: center;
     }
 
+    nav {
+        margin-top: 1.5em;
+    }  
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }  
+}
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;        
+    }
+    
     .btn {
         display: inline-block;
+        margin-right: 0.5em;
     }
-
+    
     h1 {
         font-size: 2.25rem;
     }
-
+    
     h2 {
         font-size: 1.75rem;
     }
-
+    
     .subheading {
         font-size: 1.25rem;
     }
-
+    
     p {
         font-size: 1.125rem;
     }
