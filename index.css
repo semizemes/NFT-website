@@ -13,12 +13,12 @@ h3 {
 
 h1 {
     color: whitesmoke;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
 
 h2 {
     color: #451c7a;
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     margin-top: 0;
 }
 
@@ -32,7 +32,7 @@ p {
 
 .subheading {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #d0aaff;
 }
 
@@ -56,7 +56,8 @@ a:active {
     font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding: 0.5em 1em;
     margin-right: 0.5em;
     margin-bottom: 1em;
@@ -89,7 +90,7 @@ a:active {
 header,
 section,
 footer {
-    padding: 2.875em 0;
+    padding: 1.25em 0;
 }
 
 header,
@@ -114,13 +115,10 @@ header,
     margin: 0 auto 2em;
 }
 
-.section-two-image-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .feature-image {
+    width: 100%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 footer {
@@ -128,14 +126,44 @@ footer {
     color: #5f29a3;
 }
 
+/* ----- MEDIA QUERIES ----- */
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
     .section-two-image-container {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
     }
 
     .feature-image {
         width: 48.8%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    header,
+    .section,
+    footer {
+        padding: 2.875em 0;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .subheading {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1.125rem;
     }
 }
