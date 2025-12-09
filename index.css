@@ -6,33 +6,33 @@ body {
 
 /* ----- TYPOGRAPHY ----- */
 
-h1, 
+h1,
 h3 {
     margin: 0;
 }
 
 h1 {
     color: whitesmoke;
-    font-size: 2.25em; 
+    font-size: 2.25rem;
 }
 
 h2 {
     color: #451c7a;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     margin-top: 0;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 p {
-    line-height: 1.4375em;
+    line-height: 1.5;
 }
 
 .subheading {
     display: block;
-    font-size: 0.56em; 
+    font-size: 1.25rem;
     color: #d0aaff;
 }
 
@@ -44,21 +44,22 @@ p {
 
 a {
     color: #ef5839;
-    text-decoration: underline dotted; 
+    text-decoration: underline dotted;
 }
 
-a:hover, 
+a:hover,
 a:active {
     color: #d4b44c;
 }
 
 .btn {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
     padding: 0.5em 1em;
-    margin: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
     border-radius: 4.6px;
 }
 
@@ -68,16 +69,16 @@ a:active {
 }
 
 .btn-mid {
-    color: #5f29a3; 
-    background: #f0e0ff; 
+    color: #5f29a3;
+    background: #f0e0ff;
 }
 
 .btn-light {
-    color: #5f29a3; 
+    color: #5f29a3;
     background: whitesmoke;
 }
 
-.btn:hover, 
+.btn:hover,
 .btn:active {
     color: #2b238a;
     background-color: #f3e885;
@@ -85,13 +86,13 @@ a:active {
 
 /* ----- LAYOUT ----- */
 
-header, 
-section, 
+header,
+section,
 footer {
     padding: 2.875em 0;
 }
 
-header, 
+header,
 .section-two {
     background-color: #5f29a3;
 }
@@ -115,15 +116,26 @@ header,
 
 .section-two-image-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .feature-image {
-    width: 48.8%;
     border-radius: 4.6px;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
+}
+
+
+@media (min-width:480px) {
+    .section-two-image-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .feature-image {
+        width: 48.8%;
+    }
 }
